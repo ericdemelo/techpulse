@@ -1,0 +1,188 @@
+/* =========================================================
+   TechPulse - Folha de estilo externa
+   Paleta:
+   --azul-profundo  #0B1F3A  (cabeçalho, rodapé, títulos)
+   --ciano-pulso    #00C2FF  (destaques e botão)
+   --fundo-claro    #F4F7FB  (fundo da página)
+   --texto-escuro   #1B2733  (texto corrido)
+   ========================================================= */
+
+/* ---------- Seletores de tag ---------- */
+body {
+  margin: 0;
+  background-color: #F4F7FB;
+  color: #1B2733;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #0B1F3A;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+h3 {
+  color: #0B1F3A;
+  font-size: 1.3rem;
+  margin: 30px 0 10px;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 20px;
+}
+
+strong {
+  color: #0B1F3A;
+}
+
+em {
+  color: #007AA3;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #00C2FF;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* ---------- ID exclusivo: cabeçalho ---------- */
+#cabecalho-principal {
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 20px;
+  border-bottom: 4px solid #00C2FF;
+}
+
+#cabecalho-principal h1 {
+  margin: 0 0 12px;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  color: #00C2FF;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu a {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 194, 255, 0.5);
+  border-radius: 20px;
+}
+
+.menu a:hover {
+  background-color: rgba(0, 194, 255, 0.25);
+}
+
+/* ---------- Conteúdo principal ---------- */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.destaque {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border: 1px solid #D5DEE9;
+  border-left: 6px solid #00C2FF;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(11, 31, 58, 0.1);
+}
+
+.lista-tecnologias {
+  background-color: rgba(0, 194, 255, 0.12);
+  margin: 0 0 30px;
+  padding: 16px 16px 16px 40px;
+  border-radius: 8px;
+}
+
+.lista-tecnologias li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Classe reutilizável: botão de ação ---------- */
+.botao {
+  display: inline-block;
+  background-color: #00C2FF;
+  color: #0B1F3A;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 28px;
+  border: 2px solid #0B1F3A;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.botao:hover {
+  background-color: #0B1F3A;
+  color: #00C2FF;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  background-color: #0B1F3A;
+  color: #D5DEE9;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 4px solid #00C2FF;
+}
+
+footer p {
+  text-align: center;
+  margin: 4px 0;
+}
+
+/* ---------- Responsividade (celulares) ---------- */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  #cabecalho-principal h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .destaque {
+    padding: 18px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .botao {
+    display: block;
+  }
+}
